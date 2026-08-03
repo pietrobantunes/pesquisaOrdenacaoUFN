@@ -16,7 +16,8 @@ Complexidade Linear      - O(n)
 Complexidade Logarítmica - O(log n) - Mais eficaz
 ```
 - Eficiente X Eficaz: Ambos atingem objetivos, só que eficaz tem relação com o tempo
-- Qual o melhor algoritmo de ordenação? Depende do tamanho da estrutura + do quanto já está ordenado (ex: Quanto maior, os exponenciais são piores)
+- Qual o melhor algoritmo de ordenação? 
+        - Depende do tamanho da estrutura + do quanto já está ordenado (ex: Quanto maior, os exponenciais são piores)
 
 # Pesquisar os seguintes métodos de ordenação:
 - bolha (bubble sort)
