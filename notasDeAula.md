@@ -18,7 +18,13 @@ Complexidade Logarítmica - O(log n) - Mais eficaz
 - Eficiente X Eficaz: Ambos atingem objetivos, só que eficaz tem relação com o tempo
 - Qual o melhor algoritmo de ordenação? Depende do tamanho da estrutura + do quanto já está ordenado (ex: Quanto maior, os exponenciais são piores)
 
-# Pesquisar os seguintes métodos de ordenação:
+# Pesquisa:
+Pesquisar na literatura, internet ou IA Generativa sobre os métodos de ordenação e categoriza-los em:
+    - algoritmo de memória interna ou memória externa
+    - estabilidade (estável ou instável)
+    - complexidade
+    - porções de ordenação
+    
 bolha (bubble sort)
 - memória interna
 - estável
@@ -39,7 +45,7 @@ inserção (inserction sort)
 
 pente (combsort)
 - placeholder
-- 
+
 agitação (shakesort ou cocktailsort)
 - placeholder
 
