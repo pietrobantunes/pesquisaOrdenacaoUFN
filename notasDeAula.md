@@ -1,11 +1,11 @@
 # Pesquisa e Ordenação
 ## Semana 2
-# Model View Controller (MVC)
+### Model View Controller (MVC)
 - Dividir código em partes para melhor organização
 - https://github.com/alexandrezamberlan/estruturasDeDados/tree/master/00%20-%20anosAnteriores/exemploJava_usoLista_MVC
 - Ordem de criação: MODEL (classes para construir) -> CONTROLLER (menu) -> VIEW (classes para exibir)
 
-# Algoritmos de Ordenação
+### Algoritmos de Ordenação
 A complexidade dos algoritmos é medida pela quantidade de COMPARAÇÕES e TROCAS
 - Categorias:
 ```
@@ -18,7 +18,7 @@ A complexidade dos algoritmos é medida pela quantidade de COMPARAÇÕES e TROCA
 - Eficiente X Eficaz: Ambos atingem objetivos, só que eficaz tem relação com o tempo
 - Qual o melhor algoritmo de ordenação? Depende do tamanho da estrutura + do quanto já está ordenado (ex: Quanto maior, os exponenciais são piores)
 
-# Pesquisa:
+### Pesquisa:
 **Pesquisar na literatura, internet ou IA Generativa sobre os métodos de ordenação e categoriza-los em:**
 - *algoritmo de memória interna ou memória externa*
 - *estabilidade (estável ou instável)*
