@@ -38,18 +38,18 @@ inserção (inserction sort)
 - porção ordenada: início
 
 pente (combsort)
--
+- .
 agitação (shakesort ou cocktailsort)
--
+- .
 shellsort
--
+- .
 bucketsort
--
+- .
 radix
--
+- .
 heapsort
--
+- .
 mergesort
--
+- .
 quicksort
--
+- .
