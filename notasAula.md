@@ -6,8 +6,8 @@
 - Ordem de criação: MODEL (classes para construir) -> CONTROLLER (menu) -> VIEW (classes para exibir)
 
 # Algoritmos de Ordenação
-- A complexidade dos algoritmos é medida pela quantidade de COMPARAÇÕES e TROCAS
-                - Categorias:
+A complexidade dos algoritmos é medida pela quantidade de COMPARAÇÕES e TROCAS
+- Categorias:
 ```
 Complexidade Fatorial    - O(n!)    - Menos eficiente
 Complexidade Polinomial  - O(n^k)
