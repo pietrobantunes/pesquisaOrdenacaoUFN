@@ -20,10 +20,10 @@ Complexidade Logarítmica - O(log n) - Mais eficaz
 
 # Pesquisa:
 Pesquisar na literatura, internet ou IA Generativa sobre os métodos de ordenação e categoriza-los em:
-    - algoritmo de memória interna ou memória externa
-    - estabilidade (estável ou instável)
-    - complexidade
-    - porções de ordenação
+- algoritmo de memória interna ou memória externa
+- estabilidade (estável ou instável)
+- complexidade
+- porções de ordenação
     
 bolha (bubble sort)
 - memória interna
