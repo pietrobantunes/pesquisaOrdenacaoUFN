@@ -32,17 +32,17 @@ seleção (selection sort)
 - porção ordenada: início
 
 inserção (inserction sort)
-        - memória interna
-        - estável
-        - O(nˆ2)
-        - porção ordenada: início
+- memória interna
+- estável
+- O(nˆ2)
+- porção ordenada: início
 
-- pente (combsort)
-- agitação (shakesort ou cocktailsort)
-- shellsort
-- bucketsort
-- radix
-- heapsort
-- mergesort
-- quicksort
+pente (combsort)
+agitação (shakesort ou cocktailsort)
+shellsort
+bucketsort
+radix
+heapsort
+mergesort
+quicksort
 
