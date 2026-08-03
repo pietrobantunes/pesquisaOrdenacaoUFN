@@ -46,25 +46,49 @@ inserção (inserction sort)
 - porção ordenada: início
 
 pente (combsort)
-- placeholder
+- memória interna
+- instável
+- O(n^2)
+- porção ordenada: uniforme (via contração de gaps)
 
-agitação (shakesort ou cocktailsort)
-- placeholder
+agitação (shakesort ou cocktailsort (🍾))
+- memória interna
+- estável
+- O(n^2)
+- porção ordenada: extremidades (início de final alternadamente)
 
 shellsort
-- placeholder
+- memória interna
+- instável
+- O(n^2) ou O(n^1.5) (depende dos intervalos)
+- porção ordenada: subvetores intercalados
 
 bucketsort
-- placeholder
+- memória interna
+- estável
+- O(n + k) (linear no caso médio)
+- porção ordenada: baldes indexados
 
 radix
-- placeholder
+- memória interna
+- estável
+- O(n * d) (linear)
+- porção ordenada: baseada na posição dos dígitos
 
 heapsort
-- placeholder
+- memória interna
+- instável
+- O(n log n)
+- porção ordenada: final
 
 mergesort
-- placeholder
+- memória interna ou externa
+- estável
+- O(n log n)
+- porção ordenada: subvetores intercalados
 
 quicksort
-- placeholder
+- memória interna
+- instável
+- O(n log n) (no caso médio)
+- porção ordenada: ao redor do pivô
