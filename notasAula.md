@@ -20,16 +20,16 @@ Complexidade Logarítmica - O(log n) - Mais eficaz
 
 # Pesquisar os seguintes métodos de ordenação:
 bolha (bubble sort)
-        - memória interna
-        - estável
-        - O(nˆ2)
-        - porção ordenada: final
+- memória interna
+- estável
+- O(nˆ2)
+- porção ordenada: final
 
 seleção (selection sort)
-        - memória interna
-        - instável
-        - O(nˆ2)
-        - porção ordenada: início
+- memória interna
+- instável
+- O(nˆ2)
+- porção ordenada: início
 
 inserção (inserction sort)
         - memória interna
