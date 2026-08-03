@@ -9,11 +9,11 @@
 A complexidade dos algoritmos é medida pela quantidade de COMPARAÇÕES e TROCAS
 - Categorias:
 ```
-Complexidade Fatorial    - O(n!)    - Menos eficiente
-Complexidade Polinomial  - O(n^k)
-Complexidade Exponencial - O(n^2)
-Complexidade Linear      - O(n)
-Complexidade Logarítmica - O(log n) - Mais eficaz
+> Complexidade Fatorial    - O(n!)    - Menos eficiente
+> Complexidade Polinomial  - O(n^k)
+> Complexidade Exponencial - O(n^2)
+> Complexidade Linear      - O(n)
+> Complexidade Logarítmica - O(log n) - Mais eficaz
 ```
 - Eficiente X Eficaz: Ambos atingem objetivos, só que eficaz tem relação com o tempo
 - Qual o melhor algoritmo de ordenação? Depende do tamanho da estrutura + do quanto já está ordenado (ex: Quanto maior, os exponenciais são piores)
