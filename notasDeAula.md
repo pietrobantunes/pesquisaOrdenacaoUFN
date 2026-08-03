@@ -39,17 +39,24 @@ inserção (inserction sort)
 
 pente (combsort)
 - placeholder
+- 
 agitação (shakesort ou cocktailsort)
 - placeholder
+
 shellsort
 - placeholder
+
 bucketsort
 - placeholder
+
 radix
 - placeholder
+
 heapsort
 - placeholder
+
 mergesort
 - placeholder
+
 quicksort
 - placeholder
