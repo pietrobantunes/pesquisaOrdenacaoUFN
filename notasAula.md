@@ -7,7 +7,7 @@
 
 # Algoritmos de Ordenação
 - A complexidade dos algoritmos é medida pela quantidade de COMPARAÇÕES e TROCAS
-        - Categorias:
+                - Categorias:
 ```
 Complexidade Fatorial    - O(n!)    - Menos eficiente
 Complexidade Polinomial  - O(n^k)
