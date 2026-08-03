@@ -24,6 +24,8 @@ A complexidade dos algoritmos é medida pela quantidade de COMPARAÇÕES e TROCA
 - *estabilidade (estável ou instável)*
 - *complexidade*
 - *porções de ordenação*
+
+______________________________________
     
 bolha (bubble sort)
 - memória interna
