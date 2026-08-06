@@ -104,8 +104,10 @@ quicksort
                 - Quantidade de Trocas
                 
 **ATIVIDADE 06/08/2026:** Organizar o seguinte [código](https://github.com/alexandrezamberlan/pesquisa_ordenacao/blob/master/2_ExemploMedicaoTempo.java) no modelo MVC
+- Projeto para se basear: https://github.com/alexandrezamberlan/pesquisa_ordenacao/tree/master/14-Ideia_MVC
 
 ---
 
 ## Semana 1
 ### Introdução da Disciplina
+- Criação do repositório da disciplina + revisão de Estrutura de Dados
