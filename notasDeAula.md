@@ -92,7 +92,7 @@ quicksort
 - porção ordenada: ao redor do pivô
 
 ### Premissas da "Disciplina"
-Padrão de desenvolvimento:
+- Padrão de desenvolvimento:
     - Ideia de MVC
     - Documentação
     - Benchmark
@@ -101,7 +101,8 @@ Padrão de desenvolvimento:
             - Complexidade
                 - Quantidade de Comparações
                 - Quantidade de Trocas
-
+                
+ATIVIDADE 06/08/2026: Separar o seguinte [código](https://github.com/alexandrezamberlan/pesquisa_ordenacao/blob/master/2_ExemploMedicaoTempo.java) no modelo MVC
 
 ---
 
