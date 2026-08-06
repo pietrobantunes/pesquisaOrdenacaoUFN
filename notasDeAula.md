@@ -25,7 +25,7 @@ A complexidade dos algoritmos é medida pela quantidade de COMPARAÇÕES e TROCA
 - *complexidade*
 - *porções de ordenação*
 
-______________________________________
+---
     
 bolha (bubble sort)
 - memória interna
@@ -92,3 +92,5 @@ quicksort
 - instável
 - O(n log n) (no caso médio)
 - porção ordenada: ao redor do pivô
+
+---
