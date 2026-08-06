@@ -24,8 +24,6 @@ A complexidade dos algoritmos é medida pela quantidade de COMPARAÇÕES e TROCA
 - *estabilidade (estável ou instável)*
 - *complexidade*
 - *porções de ordenação*
-
----
     
 bolha (bubble sort)
 - memória interna
@@ -92,6 +90,18 @@ quicksort
 - instável
 - O(n log n) (no caso médio)
 - porção ordenada: ao redor do pivô
+
+### Premissas da "Disciplina"
+Padrão de desenvolvimento:
+    - Ideia de MVC
+    - Documentação
+    - Benchmark
+        - Medições
+            - Tempo
+            - Complexidade
+                - Quantidade de Comparações
+                - Quantidade de Trocas
+
 
 ---
 
