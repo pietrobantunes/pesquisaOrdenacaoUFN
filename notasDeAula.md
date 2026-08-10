@@ -5,8 +5,13 @@
 Bolha (bubble sort)
 - memória interna
 - estável
-- O(nˆ2)
+- O(nˆ2) = Alta complexidade
 - porção ordenada: final
+- A estrutura possui 2 partes/porções (1a é a desordenada; 2a parte é a ordenada)
+- Adequado para listaes e listas
+- Trabalha com o conceito de trocas, ou seja, enquanto houver trocas, o algoritmo não para.
+- É considerado bolha, porque 'leva' os maiores para o final da estrutura
+- OBS: se a estrutura estiver ordenada ou quase, o bolha terá excelente desempenho
 ```
  0     1     2     3     4
 40    10    50    10    30
@@ -19,12 +24,37 @@ Bolha (bubble sort)
             __    __    __
       __    __    __    __
 ```
+```
+void bolha(List<> lista) {
+    boolean houveTroca;
+    int tmp;
+    int qtdComparacoes = 0, qtdTrocas = 0;
+
+    do {
+        houveTroca = False;
+        for (int i = 0; i < lista.size()-1; i++){
+            qtdComparacoes++;
+            if (lista.get(i) > lista.get(i+1)) {
+                qtdTrocas++;
+                houveTroca = True;
+                tmp = lista.get(i);
+                lista.set(i, lista.get(i+1));
+                lista.set(i+1, tmp);
+            }
+        }
+    } while (houveTroca);
+}
+```
 
 Seleção (selection sort)
 - memória interna
 - instável
-- O(nˆ2)
+- O(nˆ2) = Alta complexidade
 - porção ordenada: início
+- A estrutura possui 2 partes/porções (1a é a ordenada; 2a parte é a desordenada)
+- Adequado para listaes e listas
+- Trabalha com conceito de trocas não contíguas. É considerado seleção porque ele seleciona os menores para o início da estrutura
+- OBS: se a estrutura estiver ordenada, o método vai funcionar/processar como se a estrutura estivesse desordenada
 ```
  0     1     2     3     4
 40    20    50    10    30
@@ -37,12 +67,38 @@ __    __
 __    __    __
 __    __    __    __
 ```
+```
+void selecao(List<> lista) {
+    int posMenor;
+    int qtd_comparacoes = 0, qtd_trocas = 0;
+    for (int i = 0; i < lista.size()-1; i++) {
+        posMenor = i;
+        for (int j = i+1; j < lista.size(); j++) {
+            qtd_comparacoes++;
+            if (lista.get(j) < lista.get(posMenor)) {
+                posMenor = j;
+            }
+        }
+        if (i != posMenor) {
+            qtd_trocas++;
+            tmp = lista.get(i);
+            lista.set(i, lista.get(posMenor));
+            lista.set(posMenor, tmp);
+        }
+    }
+}
+```
 
 Inserção (inserction sort)
 - memória interna
 - estável
-- O(nˆ2)
+- O(nˆ2) = Alta complexidade
 - porção ordenada: início
+- A estrutura possui 2 partes/porções (1a é a ordenada; 2a parte é a desordenada)
+- Adequado para listaes e listas
+- Trabalha com o conceito de inserção na porção inicial, com isso, pode diminuir o número de comparações
+- OBS: se a estrutura estiver ordenada ou quase, o inserção terá excelente desempenho
+- Qual o melhor método de ordenação? Depende: tamanho da estrutura; de como a estrutura já está previamente ordenada;
 ```
  0     1     2     3     4
 40    20    50    10    30
@@ -54,6 +110,26 @@ Inserção (inserction sort)
       __    __
       __    __    __
       __    __    __    __
+```
+```
+void insercao(Lista<> lista) {
+    int i, j;
+    int tmp;
+    int qtdComparacoes = 0, qtdTrocas = 0;
+
+    for (i = 1; i < lista.Count(); i++) {
+        tmp = lista[i];
+        for (j = i - 1; j >= 0; j--) {
+            qtdComparacoes++;
+            if (tmp < lista[j]) {
+                lista[j + 1] = lista[j]; //shift eh trocar para o lado
+                qtdTrocas++;
+            } else break;
+        }
+        lista[j + 1] = tmp;
+        qtdTrocas++;
+    }
+}
 ```
 ---
 ## Semana 2
