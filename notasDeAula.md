@@ -1,5 +1,61 @@
 # Pesquisa e Ordenação
 ---
+## Semana 3
+### Ordenação
+Bolha (bubble sort): A ideia da bolha é pq o maior valor em cada "passada" é levado até o final da estrutura
+- memória interna
+- estável
+- O(nˆ2)
+- porção ordenada: final
+```
+ 0     1     2     3     4
+40    10    50    10    30
+20    40    10    30    50
+20    10    30    40    50
+10    20    30    40    50
+10    20    30    40    50
+                        __
+                  __    __
+            __    __    __
+      __    __    __    __
+```
+
+Seleção (selection sort)
+- memória interna
+- instável
+- O(nˆ2)
+- porção ordenada: início
+```
+ 0     1     2     3     4
+40    20    50    10    30
+10    20    50    40    30
+10    20    50    40    30
+10    20    30    40    50
+10    20    30    40    50
+__
+__    __
+__    __    __
+__    __    __    __
+```
+
+Inserção (inserction sort)
+- memória interna
+- estável
+- O(nˆ2)
+- porção ordenada: início
+```
+ 0     1     2     3     4
+40    20    50    10    30
+20    40    50    10    30
+20    40    50    10    30
+10    20    40    50    30
+10    20    30    40    50
+      __
+      __    __
+      __    __    __
+      __    __    __    __
+```
+---
 ## Semana 2
 ### Model View Controller (MVC)
 - Dividir código em partes para melhor organização
