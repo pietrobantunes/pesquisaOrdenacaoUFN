@@ -2,7 +2,7 @@
 ---
 ## Semana 3
 ### Ordenação
-Bolha (bubble sort): A ideia da bolha é pq o maior valor em cada "passada" é levado até o final da estrutura
+Bolha (bubble sort)
 - memória interna
 - estável
 - O(nˆ2)
