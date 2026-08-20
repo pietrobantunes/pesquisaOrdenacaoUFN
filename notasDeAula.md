@@ -1,5 +1,8 @@
 # Pesquisa e Ordenação
 ---
+## Semana 4
+- Entrega da Atividade Avaliativa: https://github.com/pietrobantunes/pesquisaOrdenacaoUFN/tree/main/AtividadeAvaliativa1708
+---
 ## Semana 3
 ### Ordenação
 Bolha (bubble sort)
