@@ -2,9 +2,9 @@
 ---
 ## Semana 4
 - Entrega da Atividade Avaliativa: https://github.com/pietrobantunes/pesquisaOrdenacaoUFN/tree/main/AtividadeAvaliativa1708
-
+### Continuação dos métodos de ordenação
 Pente (comb sort)
-- É baseado no Bolha, ou seja, é uma tentantiva de melhorar o Bolha.
+- É baseado no Bolha, ou seja, é uma tentativa de melhorar o Bolha.
 - ATENÇÃO: a partir deste método, há COMPARAÇÕES a uma distância X. Isso gera uma pré-organização da estrutura, diminuindo número de comparações e trocas.
 - Instável
 - Memória Interna
