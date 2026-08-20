@@ -2,6 +2,52 @@
 ---
 ## Semana 4
 - Entrega da Atividade Avaliativa: https://github.com/pietrobantunes/pesquisaOrdenacaoUFN/tree/main/AtividadeAvaliativa1708
+
+Pente (comb sort)
+- É baseado no Bolha, ou seja, é uma tentantiva de melhorar o Bolha.
+- ATENÇÃO: a partir deste método, há COMPARAÇÕES a uma distância X. Isso gera uma pré-organização da estrutura, diminuindo número de comparações e trocas.
+- Instável
+- Memória Interna
+- A estrutura possui 2 porções/partes (1a é a ordenada; 2a é a desordenada)
+- Há as variáveis clássicas do bolha: i, houveTroca, tmp.
+- Há a variável distancia que é calculada pelo tamanho da estrutura dividido por 1.3
+- Adequado somente para listas ou estruturas prontas tipo lista de uma linguagem de programação
+```
+n = 7
+0   1   2   3   4   5   6   
+7   1   4   2   3   9   8       distancia = (int)n / 1.3 = 5
+7   1   4   2   3   9   8       distancia = (int)distancia / 1.3 = 3
+2   1   4   7   3   9   8       distancia = (int)n / 1.3 = 2
+2   1   3   7   4   9   8       distancia = (int)n / 1.3 = 1
+1   2   3   4   7   8   9       distancia = (int)n / 1.3 = 1
+1   2   3   4   7   8   9
+```
+```
+void pente(List<> lista) {
+    bool houveTroca;
+    int tmp;
+    int distancia = lista.size();
+    int qtdComparacoes = 0, qtdTrocas = 0;
+
+    do {
+        distancia = (int)distancia / 1.3;
+        if (distancia < 1) {
+            distancia = 1;
+        }
+        houveTroca = false;
+        for (int i = 0; i+distancia < lista.size(); i++){
+            qtdComparacoes++;
+            if (lista.get(i) > lista.get(i+distancia)) {
+                qtdTrocas++;
+                houveTroca = True;
+                tmp = lista[i];
+                lista.set(i, lista[i+distancia]);
+                lista.set(i+distancia, tmp);
+            }
+        }
+    } while (houveTroca || distancia > 1);
+}
+```
 ---
 ## Semana 3
 ### Ordenação
