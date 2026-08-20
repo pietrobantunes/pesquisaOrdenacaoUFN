@@ -18,6 +18,7 @@ public class OrdenacaoController {
         ordenarExibir("Selecao", listaOriginal, Ordenacao::selecao);
         ordenarExibir("Insercao", listaOriginal, Ordenacao::insercao);
         ordenarExibir("Agitacao", listaOriginal, Ordenacao::agitacao);
+        ordenarExibir("Pente", listaOriginal, Ordenacao::pente);
     }
 
     private void ordenarExibir(String nome, List<Integer> listaOriginal, Function<List<Integer>, Estatisticas> algoritmo) {

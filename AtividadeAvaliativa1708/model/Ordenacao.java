@@ -118,6 +118,34 @@ public class Ordenacao {
         return new Estatisticas(comparacoes, trocas, tempoMs(inicio));
     }
 
+    public static Estatisticas pente(List<Integer> lista){
+        long inicio = System.nanoTime();
+        boolean houveTroca;
+        int tmp;
+        int distancia = lista.size();
+        long comparacoes = 0, trocas = 0;
+
+        do {
+            distancia = (int) (distancia / 1.3);
+            if (distancia < 1) {
+                distancia = 1;
+            }
+            houveTroca = false;
+            for (int i = 0; i+distancia < lista.size(); i++){
+                comparacoes++;
+                if (lista.get(i) > lista.get(i+distancia)) {
+                    trocas++;
+                    houveTroca = true;
+                    tmp = lista.get(i);
+                    lista.set(i, lista.get(i+distancia));
+                    lista.set(i+distancia, tmp);
+                }
+            }
+        } while (houveTroca || distancia > 1);
+        
+        return new Estatisticas(comparacoes, trocas, tempoMs(inicio));
+    }
+
     private static long tempoMs(long inicioNano) {
         return (System.nanoTime() - inicioNano) / 1_000_000;
     }
