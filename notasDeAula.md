@@ -231,7 +231,7 @@ pente (combsort)
 - O(n^2)
 - porção ordenada: uniforme (via contração de gaps)
 
-agitação (shakesort ou cocktailsort (🍾))
+agitação (shakesort ou cocktailsort)
 - memória interna
 - estável
 - O(n^2)
