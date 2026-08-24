@@ -6,6 +6,7 @@
 - [+2] -> 1º elemento é maior que o 2º
 - [0] -> 1º e 2º elemento são idênticos
 ```
+// Ordenação Padrão
 public int compareTo(Pessoa o) {
     int resultadoNome = this.nome.compareTo(o.getNome());
     if (resultadoNome != 0) {
@@ -13,6 +14,15 @@ public int compareTo(Pessoa o) {
     }
     return Integer.compare(this.idade, o.getIdade());
 }
+
+// Ordenação Temporária
+lista.sort((p1, p2) -> {
+    int compIdade = Integer.compare(p1.getIdade(), p2.getIdade());
+    if(compIdade != 0) {
+        return compIdade;
+    }
+    return p1.getNome().compareTo(p2.getNome());
+});
 ```
 ---
 ## Semana 4
