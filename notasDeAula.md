@@ -4,7 +4,16 @@
 ### compareTo()
 - [-1] -> 1º elemento é menor que o 2º
 - [+2] -> 1º elemento é maior que o 2º
-- [0] -> 1º e 2º elemento são idênticos 
+- [0] -> 1º e 2º elemento são idênticos
+```
+public int compareTo(Pessoa o) {
+    int resultadoNome = this.nome.compareTo(o.getNome());
+    if (resultadoNome != 0) {
+        return resultadoNome;
+    }
+    return Integer.compare(this.idade, o.getIdade());
+}
+```
 ---
 ## Semana 4
 - Entrega da Atividade Avaliativa: https://github.com/pietrobantunes/pesquisaOrdenacaoUFN/tree/main/AtividadeAvaliativa1708
