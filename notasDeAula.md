@@ -1,5 +1,11 @@
 # Pesquisa e Ordenação
 ---
+## Semana 5
+### compareTo()
+- [-1] -> 1º elemento é menor que o 2º
+- [+2] -> 1º elemento é maior que o 2º
+- [0] -> 1º e 2º elemento são idênticos 
+---
 ## Semana 4
 - Entrega da Atividade Avaliativa: https://github.com/pietrobantunes/pesquisaOrdenacaoUFN/tree/main/AtividadeAvaliativa1708
 ### Continuação dos métodos de ordenação
