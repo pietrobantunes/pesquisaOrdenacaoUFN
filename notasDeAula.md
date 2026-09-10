@@ -1,6 +1,9 @@
 # Pesquisa e Ordenação
 ---
-## Semana 5
+## Semana 7
+Atividade extra no NetBeans
+---
+## Semana 5 + 6
 ### compareTo()
 - [-1] -> 1º elemento é menor que o 2º
 - [+2] -> 1º elemento é maior que o 2º
