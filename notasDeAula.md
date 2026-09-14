@@ -1,7 +1,7 @@
 # Pesquisa e Ordenação
 ---
 ## Semana 7
-Atividade extra no NetBeans
+- Atividade extra no NetBeans
 ---
 ## Semana 5 + 6
 ### compareTo()
