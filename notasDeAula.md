@@ -1,7 +1,52 @@
 # Pesquisa e Ordenação
 ---
-## Semana 7
-- Atividade extra no NetBeans
+## Semana 9
+### Continuação dos métodos de ordenação
+Shellsort
+- É baseado no Inserção, ou seja, é uma tentativa de melhoria via o uso da ANÁLISE A DISTÂNCIA (tipo pente)
+- Instável 
+- Memória Interna
+```
+void shell(Lista<> lista) {
+    int i, j;
+    int tmp;
+    int qtdComparacoes = 0, qtdTrocas = 0;
+    int distancia = 1;
+
+    int referenciaTamanho = 3;
+
+    do {
+        distancia = referenciaTamanho * distancia + 1;
+    } while (distancia < n);
+    
+    do {
+        distancia = (int)(distancia / referenciaTamanho);
+        
+        for (i = distancia; i < n; i++) {
+            tmp = vetor[i];
+            for (j = i - distancia; j >= 0; j = j - distancia) {
+                qtdComparacoes++;
+                if (tmp < vetor[j]) {
+                    vetor[j + distancia] = vetor[j];
+                    qtdTrocas++;
+                } else break;
+            }
+            vetor[j + distancia] = tmp;
+            qtdTrocas++;
+        }
+    } while (distancia > 1);
+}
+```
+
+Heapsort
+
+Bucket
+
+Radix
+
+---
+## Semana 7 + 8
+- Atividade extra no NetBeans usando JavaSwing
 ---
 ## Semana 5 + 6
 ### compareTo()
