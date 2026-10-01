@@ -1,5 +1,30 @@
 # Pesquisa e Ordenação
 ---
+## Semana 10
+### Pesquisa
+Pesquisa Binária
+```
+public static boolean pesquisaBinaria(int numero, ArrayList<Integer> lista) {
+    int ini = 0;
+    int fim = lista.size()-1;
+    int meio;
+
+    do {
+        meio = (int)(ini + fim)/2;
+        if(numero == lista.get(meio)) {
+            return true;
+        }
+        if(numero < lista.get(meio)) {
+            fim = meio - 1;
+        } else {
+            ini = meio + 1;
+        }
+    } while (ini >= fim);
+
+    return false;
+}
+```
+---
 ## Semana 9
 ### Continuação dos métodos de ordenação
 Shellsort
@@ -39,10 +64,13 @@ void shell(Lista<> lista) {
 ```
 
 Heapsort
+- WIP
 
 Bucket
+- WIP
 
 Radix
+- WIP
 
 ---
 ## Semana 7 + 8
