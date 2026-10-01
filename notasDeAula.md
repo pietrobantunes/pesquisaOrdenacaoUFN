@@ -19,7 +19,7 @@ public static boolean pesquisaBinaria(int numero, ArrayList<Integer> lista) {
         } else {
             ini = meio + 1;
         }
-    } while (ini >= fim);
+    } while (ini <= fim);
 
     return false;
 }
