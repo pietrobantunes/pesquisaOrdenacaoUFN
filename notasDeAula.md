@@ -1,24 +1,53 @@
 # Pesquisa e Ordenação
 ## Semana 11
 ### Hash
-Hash ou Tabelas Hash - O(1)
-```
-        - Técnica de 'espalhamento' ou posicionamento, via endereço, por cálculo a partir de uma chave de entrada.
-        - Técnica do Sistema Operacional (SO) para gerenciamento de arquivos em memória secundária,
-          ou seja, quando um arquivo é criado, o SO aplica a função hash sobre um dos campos do arquivo (chave),
-          em geral identificador, e define uma posição na memória secundária.
-        - Vantagens da técnica:
-            - acesso direto, ou seja, pesquisa/busca otimizada
-        - Problema pode ocorrer?
-            COLISÃO, ou seja, chaves iguais que levam ao mesmo endereção
-        - Subtécnicas de tratamento de colisão
-            - via uso de vetor (alocação estática)
-                - Open addressing (endereçamento aberto) com TABELA HASH FECHADA (tem limite do vetor)
-            - via uso de lista encadeada (alocação dinâmica)
-                - Linked list com TABELA HASH ABERTA (com limite só da memória)
-        - IDEAIS para estruturas de dados MUIIIIITO GRANDES, para facilitar o espalhamento, ou seja,
-          diminuir as colisões
+Hash ou Tabelas Hash O(1)
+- Técnica de 'espalhamento' ou posicionamento, via endereço, por cálculo a partir de uma chave de entrada.
+  - Técnica do Sistema Operacional (SO) para gerenciamento de arquivos em memória secundária,
+    ou seja, quando um arquivo é criado, o SO aplica a função hash sobre um dos campos do arquivo (chave),
+    em geral identificador, e define uma posição na memória secundária.
+    - Vantagens da técnica:
+      - acesso direto, ou seja, pesquisa/busca otimizada
+      - Problema pode ocorrer?
+        COLISÃO, ou seja, chaves iguais que levam ao mesmo endereção
+      - Subtécnicas de tratamento de colisão
+        - via uso de vetor (alocação estática)
+          - Open addressing (endereçamento aberto) com TABELA HASH FECHADA (tem limite do vetor)
+          - via uso de lista encadeada (alocação dinâmica)
+            - Linked list com TABELA HASH ABERTA (com limite só da memória)
+      - IDEAIS para estruturas de dados MUIIIIITO GRANDES, para facilitar o espalhamento, ou seja,
+        diminuir as colisões
  ```
+ package hash;
+
+import java.util.HashSet;
+
+public class ExemploHash1 {
+    
+    public static void main(String[] args) {
+        HashSet<String> tabelaHashString = new HashSet<>();
+        
+        tabelaHashString.add("alexandre");
+        tabelaHashString.add("hermes");
+        tabelaHashString.add("davi");
+        tabelaHashString.add("alan");
+        tabelaHashString.add("alexandre");
+        tabelaHashString.add("davi");
+        
+        System.out.println(tabelaHashString);
+    }
+}
+```
+### Desafio Semestral HashMap
+Construir um programa em Java que:
+1) armazene em um HashMap os dados do arquivo telephony_sessions.txt, usando como
+   classe a classe implementada em Sessao.java
+- ler o arquivo
+- splitar as linhas
+- criar um objeto do tipo Sessao
+- adicionar (put) no HashMap
+2) permite procurar um número de celular e o retorne seja os dados da sessão
+3) DESAFIO: pesquise sobre o uso de threads e tente procurar N celulares ao mesmo tempo
 ---
 ## Semana 10
 ### Pesquisa
