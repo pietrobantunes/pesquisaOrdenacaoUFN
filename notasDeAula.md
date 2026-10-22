@@ -1,5 +1,5 @@
 # Pesquisa e Ordenação
-## Semana 11
+## Semana 11 + 12
 ### Hash
 Hash ou Tabelas Hash O(1)
 - Técnica de 'espalhamento' ou posicionamento, via endereço, por cálculo a partir de uma chave de entrada.
