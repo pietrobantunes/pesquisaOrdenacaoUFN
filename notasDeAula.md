@@ -1,6 +1,6 @@
 # Pesquisa e Ordenação
 ## Semana 14
-## Pesquisa Digital: TRIE e PATRICIA
+# Pesquisa Digital: TRIE e PATRICIA
 
 As árvores Trie e PATRICIA são estruturas de dados baseadas em pesquisa digital, o que significa que elas buscam informações caractere por caractere (ou bit a bit) em vez de comparar a chave inteira de uma vez só (como ocorre em uma árvore binária tradicional). Elas são amplamente utilizadas para buscas de prefixos, sistemas de autocompletar e roteamento de redes.
 A principal diferença entre elas está na forma como lidam com o espaço na memória: enquanto a Trie padrão cria um nó para cada caractere, a PATRICIA compacta a estrutura unindo caminhos que não se ramificam.
@@ -34,6 +34,7 @@ A árvore PATRICIA (Practical Algorithm To Retrieve Information Coded In Alphanu
 
 Na Trie padrão, cada caractere vira um nó individual. Se não houver ramificação, o caminho continua descendo letra por letra:
 
+```text
        [ Raiz ]
       /        \
     [A]        [G]
@@ -45,6 +46,7 @@ Na Trie padrão, cada caractere vira um nó individual. Se não houver ramifica�
 
   |     |       |
  [R]*  [R]*     [O]*
+```
 
 (O caractere * indica o fim de uma palavra válida).
 
@@ -53,12 +55,13 @@ Na Trie padrão, cada caractere vira um nó individual. Se não houver ramifica�
 ### 2. Estrutura na Árvore PATRICIA (Trie Compacta)
 
 A árvore PATRICIA elimina os nós redundantes de filho único, agrupando os caracteres que não se ramificam em um único bloco:
-
+```text
        [ Raiz ]
       /        \
    "AM"       "GATO"*
    /   \
  "AR"* "OR"*
+```
 
   - Análise: O prefixo comum "AM" foi mantido, mas as terminações "AR" e "OR" foram compactadas em nós únicos após a ramificação. O termo "GATO" não possui ramificações, por isso foi totalmente compactado em um único nó logo abaixo da raiz.
 
