@@ -1,6 +1,6 @@
 # Pesquisa e Ordenação
 ## Semana 14
-# Pesquisa Digital: TRIE e PATRICIA
+## Pesquisa Digital: TRIE e PATRICIA
 
 As árvores Trie e PATRICIA são estruturas de dados baseadas em pesquisa digital, o que significa que elas buscam informações caractere por caractere (ou bit a bit) em vez de comparar a chave inteira de uma vez só (como ocorre em uma árvore binária tradicional). Elas são amplamente utilizadas para buscas de prefixos, sistemas de autocompletar e roteamento de redes.
 A principal diferença entre elas está na forma como lidam com o espaço na memória: enquanto a Trie padrão cria um nó para cada caractere, a PATRICIA compacta a estrutura unindo caminhos que não se ramificam.
